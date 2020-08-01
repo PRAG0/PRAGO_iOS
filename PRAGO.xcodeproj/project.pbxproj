@@ -1,0 +1,801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FD6C4782C1FEC5AE750F31A /* Pods_PRAGO_PRAGOUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC089213612BC93AC7A4CCEC /* Pods_PRAGO_PRAGOUITests.framework */; };
+		590D111924B590E80020C800 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590D111824B590E80020C800 /* SigninView.swift */; };
+		59483EC224876073004C49D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59483EC124876073004C49D0 /* AppDelegate.swift */; };
+		59483EC424876073004C49D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59483EC324876073004C49D0 /* SceneDelegate.swift */; };
+		59483EC624876073004C49D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59483EC524876073004C49D0 /* ContentView.swift */; };
+		59483EC824876074004C49D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59483EC724876074004C49D0 /* Assets.xcassets */; };
+		59483ECB24876074004C49D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59483ECA24876074004C49D0 /* Preview Assets.xcassets */; };
+		59483ECE24876074004C49D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59483ECC24876074004C49D0 /* LaunchScreen.storyboard */; };
+		59483ED924876074004C49D0 /* PARAGOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59483ED824876074004C49D0 /* PARAGOTests.swift */; };
+		59483EE424876074004C49D0 /* PARAGOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59483EE324876074004C49D0 /* PARAGOUITests.swift */; };
+		59483EF4248761DE004C49D0 /* Antonio-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59483EF3248761DE004C49D0 /* Antonio-Bold.ttf */; };
+		59483EF624876904004C49D0 /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59483EF524876904004C49D0 /* SearchResultView.swift */; };
+		5983D9DC24CEA84F00088F8A /* Lottie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5983D9DB24CEA84F00088F8A /* Lottie.swift */; };
+		5983D9E624CFBB2600088F8A /* progress.json in Resources */ = {isa = PBXBuildFile; fileRef = 5983D9E524CFBB2600088F8A /* progress.json */; };
+		59A2463F2493405E00C5FFD1 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A2463E2493405E00C5FFD1 /* Connector.swift */; };
+		59A246422493411D00C5FFD1 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A246412493411D00C5FFD1 /* APIProtocol.swift */; };
+		DBD6953B4AB6147181C039CC /* Pods_PRAGO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8F19F119CBB26F9F221035 /* Pods_PRAGO.framework */; };
+		F1D728E3274A0A03448EAFF1 /* Pods_PRAGOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEFF997173EB915798541EE /* Pods_PRAGOTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59483ED524876074004C49D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59483EB624876073004C49D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59483EBD24876073004C49D0;
+			remoteInfo = PARAGO;
+		};
+		59483EE024876074004C49D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59483EB624876073004C49D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59483EBD24876073004C49D0;
+			remoteInfo = PARAGO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CF03A12952CF3C9F7B54315 /* Pods-PARAGO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PARAGO.debug.xcconfig"; path = "Target Support Files/Pods-PARAGO/Pods-PARAGO.debug.xcconfig"; sourceTree = "<group>"; };
+		0F8F19F119CBB26F9F221035 /* Pods_PRAGO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRAGO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2586AFB691ED24DE7220C590 /* Pods-PARAGO-PARAGOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PARAGO-PARAGOUITests.debug.xcconfig"; path = "Target Support Files/Pods-PARAGO-PARAGOUITests/Pods-PARAGO-PARAGOUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3055CCE97FDD5AB933A2F241 /* Pods-PRAGO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRAGO.debug.xcconfig"; path = "Target Support Files/Pods-PRAGO/Pods-PRAGO.debug.xcconfig"; sourceTree = "<group>"; };
+		3E728AAC5BE70977686D80D9 /* Pods-PARAGOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PARAGOTests.debug.xcconfig"; path = "Target Support Files/Pods-PARAGOTests/Pods-PARAGOTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5814CD947AFADE14A5E3106D /* Pods-PRAGOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRAGOTests.debug.xcconfig"; path = "Target Support Files/Pods-PRAGOTests/Pods-PRAGOTests.debug.xcconfig"; sourceTree = "<group>"; };
+		590D111824B590E80020C800 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		59483EBE24876073004C49D0 /* PRAGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRAGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59483EC124876073004C49D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59483EC324876073004C49D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		59483EC524876073004C49D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		59483EC724876074004C49D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59483ECA24876074004C49D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		59483ECD24876074004C49D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59483ECF24876074004C49D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59483ED424876074004C49D0 /* PRAGOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRAGOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59483ED824876074004C49D0 /* PARAGOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PARAGOTests.swift; sourceTree = "<group>"; };
+		59483EDA24876074004C49D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59483EDF24876074004C49D0 /* PRAGOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRAGOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59483EE324876074004C49D0 /* PARAGOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PARAGOUITests.swift; sourceTree = "<group>"; };
+		59483EE524876074004C49D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59483EF3248761DE004C49D0 /* Antonio-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Antonio-Bold.ttf"; sourceTree = "<group>"; };
+		59483EF524876904004C49D0 /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
+		5983D9DB24CEA84F00088F8A /* Lottie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lottie.swift; sourceTree = "<group>"; };
+		5983D9E524CFBB2600088F8A /* progress.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = progress.json; sourceTree = "<group>"; };
+		59A2463E2493405E00C5FFD1 /* Connector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		59A246412493411D00C5FFD1 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		661DD5D236294F4E261261DD /* Pods-PRAGO-PRAGOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRAGO-PRAGOUITests.debug.xcconfig"; path = "Target Support Files/Pods-PRAGO-PRAGOUITests/Pods-PRAGO-PRAGOUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DEFF997173EB915798541EE /* Pods_PRAGOTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRAGOTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7042AE3A160E3A5587CC8F71 /* Pods-PRAGO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRAGO.release.xcconfig"; path = "Target Support Files/Pods-PRAGO/Pods-PRAGO.release.xcconfig"; sourceTree = "<group>"; };
+		B67238AB4E666C4AE44C55B7 /* Pods-PRAGO-PRAGOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRAGO-PRAGOUITests.release.xcconfig"; path = "Target Support Files/Pods-PRAGO-PRAGOUITests/Pods-PRAGO-PRAGOUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BEE68F0BB69AC56FB98B79A8 /* Pods-PARAGO-PARAGOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PARAGO-PARAGOUITests.release.xcconfig"; path = "Target Support Files/Pods-PARAGO-PARAGOUITests/Pods-PARAGO-PARAGOUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CFDF6C7F73B43ED9BA3FA0DA /* Pods-PRAGOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRAGOTests.release.xcconfig"; path = "Target Support Files/Pods-PRAGOTests/Pods-PRAGOTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC089213612BC93AC7A4CCEC /* Pods_PRAGO_PRAGOUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRAGO_PRAGOUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1D318F0EAD2AECE256B214 /* Pods-PARAGOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PARAGOTests.release.xcconfig"; path = "Target Support Files/Pods-PARAGOTests/Pods-PARAGOTests.release.xcconfig"; sourceTree = "<group>"; };
+		FB3FDF9DA4F1CBF10807E16A /* Pods-PARAGO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PARAGO.release.xcconfig"; path = "Target Support Files/Pods-PARAGO/Pods-PARAGO.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59483EBB24876073004C49D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBD6953B4AB6147181C039CC /* Pods_PRAGO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59483ED124876074004C49D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D728E3274A0A03448EAFF1 /* Pods_PRAGOTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59483EDC24876074004C49D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD6C4782C1FEC5AE750F31A /* Pods_PRAGO_PRAGOUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59483EB524876073004C49D0 = {
+			isa = PBXGroup;
+			children = (
+				59483EC024876073004C49D0 /* PARAGO */,
+				59483ED724876074004C49D0 /* PARAGOTests */,
+				59483EE224876074004C49D0 /* PARAGOUITests */,
+				59483EBF24876073004C49D0 /* Products */,
+				DE103D62D7B549541C58CCB6 /* Pods */,
+				6CD5C85B8E24C6B895F11872 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		59483EBF24876073004C49D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59483EBE24876073004C49D0 /* PRAGO.app */,
+				59483ED424876074004C49D0 /* PRAGOTests.xctest */,
+				59483EDF24876074004C49D0 /* PRAGOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59483EC024876073004C49D0 /* PARAGO */ = {
+			isa = PBXGroup;
+			children = (
+				59A246402493411100C5FFD1 /* New Group */,
+				59483EC124876073004C49D0 /* AppDelegate.swift */,
+				59483EC324876073004C49D0 /* SceneDelegate.swift */,
+				59483EC524876073004C49D0 /* ContentView.swift */,
+				59483EF524876904004C49D0 /* SearchResultView.swift */,
+				59483EC724876074004C49D0 /* Assets.xcassets */,
+				59483ECC24876074004C49D0 /* LaunchScreen.storyboard */,
+				59483ECF24876074004C49D0 /* Info.plist */,
+				59483EF3248761DE004C49D0 /* Antonio-Bold.ttf */,
+				59483EC924876074004C49D0 /* Preview Content */,
+				590D111824B590E80020C800 /* SigninView.swift */,
+				5983D9E524CFBB2600088F8A /* progress.json */,
+				5983D9DB24CEA84F00088F8A /* Lottie.swift */,
+			);
+			path = PARAGO;
+			sourceTree = "<group>";
+		};
+		59483EC924876074004C49D0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				59483ECA24876074004C49D0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		59483ED724876074004C49D0 /* PARAGOTests */ = {
+			isa = PBXGroup;
+			children = (
+				59483ED824876074004C49D0 /* PARAGOTests.swift */,
+				59483EDA24876074004C49D0 /* Info.plist */,
+			);
+			path = PARAGOTests;
+			sourceTree = "<group>";
+		};
+		59483EE224876074004C49D0 /* PARAGOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59483EE324876074004C49D0 /* PARAGOUITests.swift */,
+				59483EE524876074004C49D0 /* Info.plist */,
+			);
+			path = PARAGOUITests;
+			sourceTree = "<group>";
+		};
+		59A246402493411100C5FFD1 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				59A2463E2493405E00C5FFD1 /* Connector.swift */,
+				59A246412493411D00C5FFD1 /* APIProtocol.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		6CD5C85B8E24C6B895F11872 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F8F19F119CBB26F9F221035 /* Pods_PRAGO.framework */,
+				DC089213612BC93AC7A4CCEC /* Pods_PRAGO_PRAGOUITests.framework */,
+				6DEFF997173EB915798541EE /* Pods_PRAGOTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE103D62D7B549541C58CCB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CF03A12952CF3C9F7B54315 /* Pods-PARAGO.debug.xcconfig */,
+				FB3FDF9DA4F1CBF10807E16A /* Pods-PARAGO.release.xcconfig */,
+				2586AFB691ED24DE7220C590 /* Pods-PARAGO-PARAGOUITests.debug.xcconfig */,
+				BEE68F0BB69AC56FB98B79A8 /* Pods-PARAGO-PARAGOUITests.release.xcconfig */,
+				3E728AAC5BE70977686D80D9 /* Pods-PARAGOTests.debug.xcconfig */,
+				DC1D318F0EAD2AECE256B214 /* Pods-PARAGOTests.release.xcconfig */,
+				3055CCE97FDD5AB933A2F241 /* Pods-PRAGO.debug.xcconfig */,
+				7042AE3A160E3A5587CC8F71 /* Pods-PRAGO.release.xcconfig */,
+				661DD5D236294F4E261261DD /* Pods-PRAGO-PRAGOUITests.debug.xcconfig */,
+				B67238AB4E666C4AE44C55B7 /* Pods-PRAGO-PRAGOUITests.release.xcconfig */,
+				5814CD947AFADE14A5E3106D /* Pods-PRAGOTests.debug.xcconfig */,
+				CFDF6C7F73B43ED9BA3FA0DA /* Pods-PRAGOTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59483EBD24876073004C49D0 /* PRAGO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59483EE824876074004C49D0 /* Build configuration list for PBXNativeTarget "PRAGO" */;
+			buildPhases = (
+				9E955B374B6272C51A601FE8 /* [CP] Check Pods Manifest.lock */,
+				59483EBA24876073004C49D0 /* Sources */,
+				59483EBB24876073004C49D0 /* Frameworks */,
+				59483EBC24876073004C49D0 /* Resources */,
+				0A1DA6C639397FC7B0E0FE62 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PRAGO;
+			productName = PARAGO;
+			productReference = 59483EBE24876073004C49D0 /* PRAGO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59483ED324876074004C49D0 /* PRAGOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59483EEB24876074004C49D0 /* Build configuration list for PBXNativeTarget "PRAGOTests" */;
+			buildPhases = (
+				135356863027E4A7C7ACD729 /* [CP] Check Pods Manifest.lock */,
+				59483ED024876074004C49D0 /* Sources */,
+				59483ED124876074004C49D0 /* Frameworks */,
+				59483ED224876074004C49D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59483ED624876074004C49D0 /* PBXTargetDependency */,
+			);
+			name = PRAGOTests;
+			productName = PARAGOTests;
+			productReference = 59483ED424876074004C49D0 /* PRAGOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59483EDE24876074004C49D0 /* PRAGOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59483EEE24876074004C49D0 /* Build configuration list for PBXNativeTarget "PRAGOUITests" */;
+			buildPhases = (
+				644D724CFA5660C07D0B4C42 /* [CP] Check Pods Manifest.lock */,
+				59483EDB24876074004C49D0 /* Sources */,
+				59483EDC24876074004C49D0 /* Frameworks */,
+				59483EDD24876074004C49D0 /* Resources */,
+				6170EEA013E16EEBE4AC9F11 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59483EE124876074004C49D0 /* PBXTargetDependency */,
+			);
+			name = PRAGOUITests;
+			productName = PARAGOUITests;
+			productReference = 59483EDF24876074004C49D0 /* PRAGOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59483EB624876073004C49D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = DaeduckSoftwareMeisterHighSchool;
+				TargetAttributes = {
+					59483EBD24876073004C49D0 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					59483ED324876074004C49D0 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 59483EBD24876073004C49D0;
+					};
+					59483EDE24876074004C49D0 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 59483EBD24876073004C49D0;
+					};
+				};
+			};
+			buildConfigurationList = 59483EB924876073004C49D0 /* Build configuration list for PBXProject "PRAGO" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59483EB524876073004C49D0;
+			productRefGroup = 59483EBF24876073004C49D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59483EBD24876073004C49D0 /* PRAGO */,
+				59483ED324876074004C49D0 /* PRAGOTests */,
+				59483EDE24876074004C49D0 /* PRAGOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59483EBC24876073004C49D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59483ECE24876074004C49D0 /* LaunchScreen.storyboard in Resources */,
+				59483ECB24876074004C49D0 /* Preview Assets.xcassets in Resources */,
+				59483EF4248761DE004C49D0 /* Antonio-Bold.ttf in Resources */,
+				5983D9E624CFBB2600088F8A /* progress.json in Resources */,
+				59483EC824876074004C49D0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59483ED224876074004C49D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59483EDD24876074004C49D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A1DA6C639397FC7B0E0FE62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PRAGO/Pods-PRAGO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PRAGO/Pods-PRAGO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PRAGO/Pods-PRAGO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		135356863027E4A7C7ACD729 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PRAGOTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6170EEA013E16EEBE4AC9F11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PRAGO-PRAGOUITests/Pods-PRAGO-PRAGOUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PRAGO-PRAGOUITests/Pods-PRAGO-PRAGOUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PRAGO-PRAGOUITests/Pods-PRAGO-PRAGOUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		644D724CFA5660C07D0B4C42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PRAGO-PRAGOUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E955B374B6272C51A601FE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PRAGO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59483EBA24876073004C49D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5983D9DC24CEA84F00088F8A /* Lottie.swift in Sources */,
+				59483EC224876073004C49D0 /* AppDelegate.swift in Sources */,
+				59483EC424876073004C49D0 /* SceneDelegate.swift in Sources */,
+				59483EF624876904004C49D0 /* SearchResultView.swift in Sources */,
+				59A2463F2493405E00C5FFD1 /* Connector.swift in Sources */,
+				59A246422493411D00C5FFD1 /* APIProtocol.swift in Sources */,
+				590D111924B590E80020C800 /* SigninView.swift in Sources */,
+				59483EC624876073004C49D0 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59483ED024876074004C49D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59483ED924876074004C49D0 /* PARAGOTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59483EDB24876074004C49D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59483EE424876074004C49D0 /* PARAGOUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59483ED624876074004C49D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59483EBD24876073004C49D0 /* PRAGO */;
+			targetProxy = 59483ED524876074004C49D0 /* PBXContainerItemProxy */;
+		};
+		59483EE124876074004C49D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59483EBD24876073004C49D0 /* PRAGO */;
+			targetProxy = 59483EE024876074004C49D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59483ECC24876074004C49D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59483ECD24876074004C49D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59483EE624876074004C49D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59483EE724876074004C49D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59483EE924876074004C49D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3055CCE97FDD5AB933A2F241 /* Pods-PRAGO.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PARAGO/Preview Content\"";
+				DEVELOPMENT_TEAM = Z25H7B85Z8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PARAGO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dsm.PRAGO;
+				PRODUCT_NAME = PRAGO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59483EEA24876074004C49D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7042AE3A160E3A5587CC8F71 /* Pods-PRAGO.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PARAGO/Preview Content\"";
+				DEVELOPMENT_TEAM = Z25H7B85Z8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PARAGO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dsm.PRAGO;
+				PRODUCT_NAME = PRAGO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59483EEC24876074004C49D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5814CD947AFADE14A5E3106D /* Pods-PRAGOTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84695NVTZ8;
+				INFOPLIST_FILE = PARAGOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dsm.PARAGOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PRAGO.app/PRAGO";
+			};
+			name = Debug;
+		};
+		59483EED24876074004C49D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFDF6C7F73B43ED9BA3FA0DA /* Pods-PRAGOTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84695NVTZ8;
+				INFOPLIST_FILE = PARAGOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dsm.PARAGOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PRAGO.app/PRAGO";
+			};
+			name = Release;
+		};
+		59483EEF24876074004C49D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 661DD5D236294F4E261261DD /* Pods-PRAGO-PRAGOUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84695NVTZ8;
+				INFOPLIST_FILE = PARAGOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dsm.PARAGOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PARAGO;
+			};
+			name = Debug;
+		};
+		59483EF024876074004C49D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B67238AB4E666C4AE44C55B7 /* Pods-PRAGO-PRAGOUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84695NVTZ8;
+				INFOPLIST_FILE = PARAGOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dsm.PARAGOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PARAGO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59483EB924876073004C49D0 /* Build configuration list for PBXProject "PRAGO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59483EE624876074004C49D0 /* Debug */,
+				59483EE724876074004C49D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59483EE824876074004C49D0 /* Build configuration list for PBXNativeTarget "PRAGO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59483EE924876074004C49D0 /* Debug */,
+				59483EEA24876074004C49D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59483EEB24876074004C49D0 /* Build configuration list for PBXNativeTarget "PRAGOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59483EEC24876074004C49D0 /* Debug */,
+				59483EED24876074004C49D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59483EEE24876074004C49D0 /* Build configuration list for PBXNativeTarget "PRAGOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59483EEF24876074004C49D0 /* Debug */,
+				59483EF024876074004C49D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59483EB624876073004C49D0 /* Project object */;
+}

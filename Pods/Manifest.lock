@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.9.0)
+  - Kingfisher (5.14.1):
+    - Kingfisher/Core (= 5.14.1)
+  - Kingfisher/Core (5.14.1)
+  - lottie-ios (3.1.8)
+  - RxAlamofire (5.0.0):
+    - RxAlamofire/Core (= 5.0.0)
+  - RxAlamofire/Core (5.0.0):
+    - Alamofire (~> 4.8)
+    - RxSwift (~> 5.0)
+  - RxSwift (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - lottie-ios
+  - RxAlamofire
+  - RxSwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - lottie-ios
+    - RxAlamofire
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  RxAlamofire: e7875a012aff55345672d0f70a2a9cd6aeb0f211
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+
+PODFILE CHECKSUM: 47e773cc072d0266d6e1b4b3f5651f41f6366b34
+
+COCOAPODS: 1.8.0.beta.2

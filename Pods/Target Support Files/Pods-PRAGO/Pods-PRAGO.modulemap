@@ -1,0 +1,6 @@
+framework module Pods_PRAGO {
+  umbrella header "Pods-PRAGO-umbrella.h"
+
+  export *
+  module * { export * }
+}
