@@ -7,17 +7,24 @@
 //
 
 import SwiftUI
+import Combine
+import Kingfisher
 
-struct ContentView: View {
+struct ContentView: SwiftUI.View {
     
     @State private var txtSearch: String = ""
     @State private var isSearched = false
     @State private var showMyPage = false
     @State private var showSignin = false
+    @State private var isSignIn = false
+    @State private var image: [UIImage?] = [UIImage(named: "TestImage"), UIImage(named: "TestImage")]
     @State var rightState = CGSize.zero
-    @State var datas: [[String: Any]] = [["product_name": ""]]
+    @State var datas: [[String: Any]] = [["product_name": "", "product_site_link": "https://apple.com", "product_image": "https://shopping-phinf.pstatic.net/main_2230069/22300691253.20200519165442.jpg?type=f300"]]
     
-    var body: some View {
+    var imageURL: [URL?] = [nil]
+    public let animation: Animation = .easeInOut
+    
+    var body: some SwiftUI.View {
         ZStack {
             VStack() {
                 Spacer()
@@ -51,8 +58,8 @@ struct ContentView: View {
                             self.getData()
                         }
                     }
-                        .foregroundColor(Color.white)
-                        .font(.system(size: 16))
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 16))
                 }
                 .animation(.spring(response: 0.5, dampingFraction: 0.8, blendDuration: 0))
                 Spacer()
@@ -67,13 +74,14 @@ struct ContentView: View {
                 .onTapGesture {
                     self.showMyPage.toggle()
                 }
-                SearchResultView(datas: $datas)
+                SearchResultView(datas: $datas, images: $image)
                     .frame(height: isSearched ? 680 : 0)
                     .opacity(isSearched ? 1 : 0)
                     .shadow(color: Color.gray, radius: 3, x: 0, y: 3)
                     .animation(.spring(response: 0.55, dampingFraction: 1, blendDuration: 0))
             }
             .frame(width: UIScreen.screenWidth)
+                
             .background(LinearGradient.init(gradient: Gradient(colors: [Color("BackgroundStartColor"), Color("BackgroundFinishColor")]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all))
             HStack {
                 Spacer()
@@ -93,12 +101,13 @@ struct ContentView: View {
                                 Spacer()
                             }
                             List {
-                                MypageRow(name: "로그인")
+                                MypageRow(name: isSignIn ? "로그아웃":"로그인")
                                     .onTapGesture {
+                                        self.isSignIn = false
                                         self.showSignin = true
                                 }
                                 .sheet(isPresented: $showSignin) {
-                                    SigninView()
+                                    SigninView(isSignIn: self.$isSignIn)
                                 }
                                 MypageRow(name: "찜한 상품")
                                     .onTapGesture {
@@ -146,7 +155,7 @@ struct ContentView: View {
     }
     
     func getData() {
-        let url = "http://192.168.137.1:8080/search_api/search/?query=\(txtSearch)"
+        let url = "http://10.156.145.205:8080/search_api/search/?query=\(txtSearch)"
         let encodedURL = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         var request = URLRequest(url: URL(string: encodedURL)!)
         request.httpMethod = "GET"
@@ -160,6 +169,7 @@ struct ContentView: View {
             case 200:
                 let jsonSerialization = try! JSONSerialization.jsonObject(with: data!, options: []) as! [[String: Any]]
                 print(jsonSerialization)
+                self.loadImage(data: jsonSerialization)
                 self.datas = jsonSerialization
                 self.isSearched.toggle()
             default:
@@ -167,12 +177,27 @@ struct ContentView: View {
             }
         }.resume()
     }
+    
+    private func loadImage(data: [[String: Any]]) {
+        for i in 0..<data.count {
+            guard let imageURL = URL(string: data[i]["product_image"] as! String)
+            else { return }
+            KingfisherManager.shared.retrieveImage(with: imageURL) { result in
+                switch result {
+                case .success(let imageResult):
+                    self.image.append(imageResult.image)
+                case .failure:
+                    self.image.append(UIImage(named: "TestImage"))
+                }
+            }
+        }
+    }
 }
 
-struct MypageRow: View {
+struct MypageRow: SwiftUI.View {
     var name: String
     
-    var body: some View {
+    var body: some SwiftUI.View {
         Text("\(name)")
             .font(.system(size: 16))
             .padding(.leading, 6)
@@ -180,7 +205,7 @@ struct MypageRow: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
+    static var previews: some SwiftUI.View {
         ContentView()
     }
 }
@@ -189,4 +214,22 @@ extension UIScreen{
     static let screenWidth = UIScreen.main.bounds.size.width
     static let screenHeight = UIScreen.main.bounds.size.height
     static let screenSize = UIScreen.main.bounds.size
+}
+
+public class responses {
+    var index: Int
+    var product_site_link: String
+    var product_name: String
+    var product_site_name: String
+    var product_price: Int
+    var product_image: String
+    
+    init(index: Int, product_site_link: String, product_name: String, product_site_name: String, product_price: Int, product_image: String) {
+        self.index = index
+        self.product_site_link = product_site_link
+        self.product_name = product_name
+        self.product_site_name = product_site_name
+        self.product_price = product_price
+        self.product_image = product_image
+    }
 }

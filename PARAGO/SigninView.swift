@@ -12,9 +12,13 @@ struct SigninView: View {
     
     @State private var txtID = ""
     @State private var txtPW = ""
+    @State private var signUpID = ""
+    @State private var signUpPW = ""
     @State private var txtUserName = ""
     @State private var isNeedSignup = false
     @State private var isNeedName = false
+    
+    @Binding var isSignIn: Bool
     
     var body: some View {
         VStack {
@@ -26,11 +30,11 @@ struct SigninView: View {
             Spacer()
                 .frame(height: 60)
             HStack {
-                SigninSubView(txtID: $txtID, txtPW: $txtPW, isNeedName: $isNeedName)
+                SigninSubView(txtID: $txtID, txtPW: $txtPW, isNeedName: $isNeedName, isSignIn: $isSignIn)
                     .frame(width: UIScreen.screenWidth)
-                SignupSubView(isNeedName: $isNeedName)
+                SignupSubView(txtID: $signUpID, txtPW: $signUpPW, isNeedName: $isNeedName)
                     .frame(width: UIScreen.screenWidth)
-                SetNameView()
+                SetNameView(isNeedSignUp: $isNeedSignup, userName: $txtUserName, txtID: $signUpID, txtPW: $signUpPW)
                     .frame(width: UIScreen.screenWidth)
             }
             .offset(x: isNeedSignup ? isNeedName ? -UIScreen.screenWidth - 8:0:UIScreen.screenWidth + 8)
@@ -59,7 +63,7 @@ struct SigninView: View {
 
 struct SigninView_Previews: PreviewProvider {
     static var previews: some View {
-        SigninView()
+        SigninView(isSignIn: .constant(false))
     }
 }
 
@@ -69,9 +73,13 @@ struct AuthModel: Codable{
 }
 
 struct SigninSubView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     @Binding var txtID: String
     @Binding var txtPW: String
     @Binding var isNeedName: Bool
+    
+    @Binding var isSignIn: Bool
     
     var body: some View {
         VStack{
@@ -112,6 +120,8 @@ struct SigninSubView: View {
                 switch code{
                 case 200:
                     print(data)
+                    self.isSignIn = true
+                    self.presentationMode.wrappedValue.dismiss()
                 case 204: print(code)
                 default: print(code)
                 }
@@ -127,9 +137,10 @@ struct SigninSubView: View {
 }
 
 struct SignupSubView: View {
-    @State private var txtID = ""
-    @State private var txtPW = ""
     @State private var txtPWC = ""
+    
+    @Binding var txtID: String
+    @Binding var txtPW: String
     @Binding var isNeedName: Bool
     
     var body: some View {
@@ -184,7 +195,11 @@ struct SignupSubView: View {
 }
 
 struct SetNameView: View {
-    @State private var userName = ""
+    
+    @Binding var isNeedSignUp: Bool
+    @Binding var userName: String
+    @Binding var txtID: String
+    @Binding var txtPW: String
     
     var body: some View {
         VStack{
@@ -201,9 +216,26 @@ struct SetNameView: View {
                     .foregroundColor(Color(red: 0.8, green: 0.8, blue: 0.8))
             } else {
                 Button("회원가입") {
+                    self.postData()
                 }
                 .foregroundColor(Color.white)
             }
         }
+    }
+    
+    func postData() {
+        print("\(userName) \(txtID) + \(txtPW)")
+    _ = Connector.instance
+        .getRequest(MainAPI.signUp, method: .post, params: ["user_id": "\(txtID)", "name": "\(userName)", "password": "\(txtPW)"])
+        .decodeData(AuthModel.self)
+        .subscribe(onNext: { [self] code, str, data in
+            switch code{
+            case 201:
+                self.isNeedSignUp = false
+                print(data)
+            case 204: print(code)
+            default: print(code)
+            }
+        })
     }
 }

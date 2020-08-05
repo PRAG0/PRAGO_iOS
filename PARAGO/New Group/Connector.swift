@@ -23,7 +23,7 @@ public class Connector {
     
     public static let instance = Connector()
        
-    private let basePath = "http://192.168.137.1:8080/"
+    private let basePath = "http://10.156.145.205:8080/"
     private init(){ }
     
     func getRequest(_ subPath: API, method: RequestMethod, params: [String : Any]? = nil) -> URLRequest{

@@ -10,7 +10,7 @@ target 'PRAGO' do
   pod 'RxAlamofire'
   pod 'Alamofire'
   pod 'lottie-ios'
-  pod 'Kingfisher'
+  pod 'Kingfisher/SwiftUI'
 
   target 'PRAGOTests' do
     inherit! :search_paths
